@@ -8,6 +8,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using Newtonsoft.Json;
 
 namespace IdentityBackendAPI.Controllers
 {
@@ -43,7 +44,7 @@ namespace IdentityBackendAPI.Controllers
                 {
                     resAuth.Status = true;
                     resAuth.Message = $"User - {userDetailsContent.UserName} authenticated";
-                    resAuth.apiKey = tokenUtility.GetToken(userDetailsContent);
+                    (resAuth.apiKeyExpiration, resAuth.apiKey) = tokenUtility.GetToken(userDetailsContent);
                 }
                 else
                 {
@@ -57,9 +58,9 @@ namespace IdentityBackendAPI.Controllers
         [Authorize]
         [HttpGet]
         [Route("api/GetAllUserDetails")]
-        public IQueryable<IdentityModel> GetAllUserDetails()
+        public async Task<List<IdentityModel>> GetAllUserDetails()
         {
-            return userDetails.AsQueryable();
+            return userDetails;
         }
     }
 }

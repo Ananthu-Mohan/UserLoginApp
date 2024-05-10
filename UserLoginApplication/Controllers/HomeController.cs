@@ -1,30 +1,33 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Web;
+using System.Web.Configuration;
 using System.Web.Mvc;
+using UserLoginApplication.Abstraction;
+using UserLoginApplication.Models;
+using UserLoginApplication.Utility;
 
 namespace UserLoginApplication.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        private string baseUrl = WebConfigurationManager.AppSettings["baseURL"];
+        IHttpUtility _httpUtility;
+       
+        [HttpGet]
+        [Route("Index")]
+        public async Task<ActionResult> Index()
         {
-            return View();
-        }
+            baseUrl = $"{baseUrl}/api/GetAllUserDetails";
+            ViewBag.Title = "Dashboard";
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
+            _httpUtility = new HttpUtilityClass(baseUrl, TempData["AuthKey"].ToString());
 
-            return View();
-        }
+            List<IdentityModel> userDets = await _httpUtility.UserDetails();
 
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
+            return View(userDets);
         }
     }
 }

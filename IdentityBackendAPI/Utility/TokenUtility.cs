@@ -14,7 +14,7 @@ namespace IdentityBackendAPI.Utility
         {
             _configuration = configuration;
         }
-        public string GetToken(IdentityModel userData)
+        public (DateTime,string) GetToken(IdentityModel userData)
         {
             var claims = new[]
             {
@@ -26,13 +26,14 @@ namespace IdentityBackendAPI.Utility
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));
             var signIn = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+            var expirationTime = DateTime.UtcNow.AddMinutes(60);
             var token = new JwtSecurityToken(
                 _configuration["Jwt:Issuer"],
                 _configuration["Jwt:Audience"],
                 claims,
-                expires: DateTime.UtcNow.AddMinutes(60),
+                expires: expirationTime,
                 signingCredentials: signIn);
-            return new JwtSecurityTokenHandler().WriteToken(token);
+            return (expirationTime,new JwtSecurityTokenHandler().WriteToken(token));
         }
     }
 }

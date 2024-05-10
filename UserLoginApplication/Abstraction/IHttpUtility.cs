@@ -10,5 +10,6 @@ namespace UserLoginApplication.Abstraction
     public interface IHttpUtility
     {
         Task<string> IsUserAuthenticated(IdentityModel userDetails);
+        Task<List<IdentityModel>> UserDetails();
     }
 }

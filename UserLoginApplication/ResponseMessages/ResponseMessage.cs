@@ -10,5 +10,6 @@ namespace UserLoginApplication.ResponseMessages
         public bool Status { get; set; }
         public string Message { get; set; }
         public string apiKey { get; set; }
+        public DateTime apiKeyExpiration { get; set; }
     }
 }

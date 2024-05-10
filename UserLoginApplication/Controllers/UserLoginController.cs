@@ -13,6 +13,7 @@ using UserLoginApplication.Utility;
 
 namespace UserLoginApplication.Controllers
 {
+    [Route("UserLogin")]
     public class UserLoginController : Controller
     {
         private string baseUrl = WebConfigurationManager.AppSettings["baseURL"];
@@ -26,6 +27,7 @@ namespace UserLoginApplication.Controllers
             return View();
         }
         [HttpPost]
+        [Route("")]
         [Route("IdentityLogin")]
         public async Task<ActionResult> UserLogin(IdentityModel userLoginData)
         {
@@ -38,7 +40,17 @@ namespace UserLoginApplication.Controllers
                 ResponseMessage responseMsg = JsonConvert.DeserializeObject<ResponseMessage>(responseContent);
                 if (responseMsg.Status)
                 {
-                    return RedirectToAction("Index", "Home");
+                    Session["Username"] = userLoginData.UserName;
+                    TempData["AuthKey"] = responseMsg.apiKey;
+                    TempData["KeyExpiration"] = responseMsg.apiKeyExpiration.ToString();
+                    if (string.Equals(userLoginData.UserName,"admin"))
+                    {
+                        return RedirectToAction("Index", "Home");
+                    }
+                    else
+                    {
+                        return RedirectToAction("Index", "Home");
+                    }
                 }
                 else
                 {
