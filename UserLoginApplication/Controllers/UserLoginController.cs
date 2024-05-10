@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
+using System.Web.Configuration;
 using System.Web.Mvc;
 using UserLoginApplication.Abstraction;
 using UserLoginApplication.Models;
@@ -14,7 +15,7 @@ namespace UserLoginApplication.Controllers
 {
     public class UserLoginController : Controller
     {
-        private string baseUrl = "https://localhost:7145";
+        private string baseUrl = WebConfigurationManager.AppSettings["baseURL"];
         IHttpUtility _httpUtility;
 
         [HttpGet]
@@ -37,9 +38,7 @@ namespace UserLoginApplication.Controllers
                 ResponseMessage responseMsg = JsonConvert.DeserializeObject<ResponseMessage>(responseContent);
                 if (responseMsg.Status)
                 {
-                    var resToken = responseMsg.apiKey;
-                    return Content(JsonConvert.SerializeObject(responseMsg));
-                    //return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Index", "Home");
                 }
                 else
                 {

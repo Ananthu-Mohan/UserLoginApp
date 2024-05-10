@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Study time\\UserLoginApplicationProject\\IdentityBackendAPI\\IdentityBackendAPI.csproj": {}
+    "D:\\GitProject\\UserLoginApp\\IdentityBackendAPI\\IdentityBackendAPI.csproj": {}
   },
   "projects": {
-    "F:\\Study time\\UserLoginApplicationProject\\IdentityBackendAPI\\IdentityBackendAPI.csproj": {
+    "D:\\GitProject\\UserLoginApp\\IdentityBackendAPI\\IdentityBackendAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Study time\\UserLoginApplicationProject\\IdentityBackendAPI\\IdentityBackendAPI.csproj",
+        "projectUniqueName": "D:\\GitProject\\UserLoginApp\\IdentityBackendAPI\\IdentityBackendAPI.csproj",
         "projectName": "IdentityBackendAPI",
-        "projectPath": "F:\\Study time\\UserLoginApplicationProject\\IdentityBackendAPI\\IdentityBackendAPI.csproj",
+        "projectPath": "D:\\GitProject\\UserLoginApp\\IdentityBackendAPI\\IdentityBackendAPI.csproj",
         "packagesPath": "C:\\Users\\Ananthu\\.nuget\\packages\\",
-        "outputPath": "F:\\Study time\\UserLoginApplicationProject\\IdentityBackendAPI\\obj\\",
+        "outputPath": "D:\\GitProject\\UserLoginApp\\IdentityBackendAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ananthu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -43,6 +43,10 @@
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[8.0.4, )"
+            },
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

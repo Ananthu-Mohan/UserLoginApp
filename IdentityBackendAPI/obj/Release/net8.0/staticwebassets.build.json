@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Mhc4QBS4YnsjTsmMu1RHAi4eIQRr6cYHopCbga5awXU=",
+  "Source": "IdentityBackendAPI",
+  "BasePath": "_content/IdentityBackendAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
