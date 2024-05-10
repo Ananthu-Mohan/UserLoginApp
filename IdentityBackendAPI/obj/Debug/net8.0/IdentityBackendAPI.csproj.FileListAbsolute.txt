@@ -94,6 +94,7 @@ D:\GitProject\UserLoginApp\IdentityBackendAPI\bin\Debug\net8.0\Microsoft.Identit
 D:\GitProject\UserLoginApp\IdentityBackendAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 D:\GitProject\UserLoginApp\IdentityBackendAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 D:\GitProject\UserLoginApp\IdentityBackendAPI\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\GitProject\UserLoginApp\IdentityBackendAPI\bin\Debug\net8.0\Newtonsoft.Json.dll
 D:\GitProject\UserLoginApp\IdentityBackendAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\GitProject\UserLoginApp\IdentityBackendAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\GitProject\UserLoginApp\IdentityBackendAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -120,4 +121,3 @@ D:\GitProject\UserLoginApp\IdentityBackendAPI\obj\Debug\net8.0\refint\IdentityBa
 D:\GitProject\UserLoginApp\IdentityBackendAPI\obj\Debug\net8.0\IdentityBackendAPI.pdb
 D:\GitProject\UserLoginApp\IdentityBackendAPI\obj\Debug\net8.0\IdentityBackendAPI.genruntimeconfig.cache
 D:\GitProject\UserLoginApp\IdentityBackendAPI\obj\Debug\net8.0\ref\IdentityBackendAPI.dll
-D:\GitProject\UserLoginApp\IdentityBackendAPI\bin\Debug\net8.0\Newtonsoft.Json.dll

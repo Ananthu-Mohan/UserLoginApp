@@ -14,5 +14,9 @@ namespace UserLoginApplication.Models
         public string UserName { get; set; }
         [DisplayName("Password")]
         public string Password { get; set; }
+        public string Email { get; set; } = string.Empty;
+        public long? PhoneNumber { get; set; }
+        public int? EmployeeID { get; set; }
+        public string EmployeeState { get; set; } = string.Empty;
     }
 }

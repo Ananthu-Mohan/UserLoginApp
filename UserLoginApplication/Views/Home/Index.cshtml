@@ -34,12 +34,36 @@
                         <th>
                             @Html.DisplayNameFor(model => model.UserName)
                         </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Email)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.PhoneNumber)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.EmployeeID)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.EmployeeState)
+                        </th>
                     </tr>
                     @foreach (var item in Model)
                     {
                         <tr>
                             <td>
                                 @Html.DisplayFor(modelItem => item.UserName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Email)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.PhoneNumber)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.EmployeeID)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.EmployeeState)
                             </td>
                         </tr>
                     }
