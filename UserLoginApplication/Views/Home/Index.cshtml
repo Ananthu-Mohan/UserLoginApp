@@ -18,7 +18,7 @@
         h5 {
             margin-left: 20px;
         }
-        p {
+        .tokenExpiration {
             margin-left: 20px;
         }
     </style>
@@ -29,6 +29,9 @@
         <hr />
         <section class="row" aria-labelledby="aspnetBody">
             <div class="m-4">
+                <h6>
+                    Table Fetched from Authroized API : /api/GetAllUserDetails
+                </h6>
                 <table class="table table-striped">
                     <tr>
                         <th>
@@ -75,7 +78,7 @@
             <textarea class="col-md-6 form-control" rows="5" disabled>
                 @Session["AuthKey"]
             </textarea>
-            <p><em>Token expires on : @Session["KeyExpiration"] UTC</em></p>
+            <h6 class="tokenExpiration"><em>Token expires on : @Session["KeyExpiration"] UTC</em></h6>
         </div>
     </main>
 

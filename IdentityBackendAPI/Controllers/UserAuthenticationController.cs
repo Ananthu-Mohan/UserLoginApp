@@ -40,7 +40,7 @@ namespace IdentityBackendAPI.Controllers
             }
             else
             {
-                if (userDetails.Where(user => user.UserName == userDetailsContent.UserName && user.Password == userDetailsContent.Password).Count() > 0)
+                if (userDetails.Where(user => user.UserName == userDetailsContent.UserName && user.Password == userDetailsContent.Password && String.Equals(user.EmployeeState,"Active")).Count() > 0)
                 {
                     resAuth.Status = true;
                     resAuth.Message = $"User - {userDetailsContent.UserName} authenticated";
@@ -49,7 +49,7 @@ namespace IdentityBackendAPI.Controllers
                 else
                 {
                     resAuth.Status = false;
-                    resAuth.Message = $"Invalid Username and Password";
+                    resAuth.Message = $"Invalid Username and Password / Inactive User";
                 }
             }
             return resAuth;
