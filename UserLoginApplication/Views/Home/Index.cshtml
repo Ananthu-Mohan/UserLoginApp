@@ -49,9 +49,9 @@
         <div class="row">
             <h5>User Token:</h5>
             <textarea class="col-md-6 form-control" rows="5" disabled>
-                @TempData["AuthKey"]
+                @Session["AuthKey"]
             </textarea>
-            <p><em>Token expires on : @TempData["KeyExpiration"] UTC</em></p>
+            <p><em>Token expires on : @Session["KeyExpiration"] UTC</em></p>
         </div>
     </main>
 

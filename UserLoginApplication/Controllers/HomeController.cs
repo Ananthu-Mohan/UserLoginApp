@@ -23,11 +23,18 @@ namespace UserLoginApplication.Controllers
             baseUrl = $"{baseUrl}/api/GetAllUserDetails";
             ViewBag.Title = "Dashboard";
 
-            _httpUtility = new HttpUtilityClass(baseUrl, TempData["AuthKey"].ToString());
+            _httpUtility = new HttpUtilityClass(baseUrl, Session["AuthKey"].ToString());
 
             List<IdentityModel> userDets = await _httpUtility.UserDetails();
 
             return View(userDets);
+        }
+        [HttpGet]
+        [Route("ReadUser")]
+        public async Task<ActionResult> ReadUser()
+        {
+            ViewBag.Title = "Dashboard";
+            return View();
         }
     }
 }

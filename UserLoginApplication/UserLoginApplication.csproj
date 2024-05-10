@@ -184,6 +184,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\UserLogin\UserLogin.cshtml" />
     <Content Include="Views\Shared\_LayoutNoNav.cshtml" />
+    <Content Include="Views\Home\ReadUser.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

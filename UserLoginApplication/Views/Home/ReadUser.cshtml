@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = Session["Username"];
+}
+<style>
+    footer {
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    textarea {
+        margin-left: 25px;
+        resize: none;
+    }
+
+    h5 {
+        margin-left: 20px;
+    }
+
+    p {
+        margin-left: 20px;
+    }
+</style>
+<main>
+    <section class="row" aria-labelledby="aspnetTitle">
+        <h1 id="title">Welcome @Session["Username"].ToString().ToUpper()</h1>
+    </section>
+    <hr />
+
+    <div class="row">
+        <h5>User Token:</h5>
+            <textarea class="col-md-6 form-control" rows="5" disabled>
+                @Session["AuthKey"]
+            </textarea>
+        <p><em>Token expires on : @Session["KeyExpiration"] UTC</em></p>
+    </div>
+</main>
+

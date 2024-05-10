@@ -17,7 +17,16 @@
             </button>
             <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
                 <ul class="navbar-nav flex-grow-1">
-                    <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    @{
+                        if (string.Equals(Session["Username"], "admin"))
+                        {
+                            <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                        }
+                        else
+                        {
+                            <li>@Html.ActionLink("Home", "ReadUser", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                        }
+                    }
                     <li>@Html.ActionLink("Logout", "UserLogin", "UserLogin", new { area = "" }, new { @class = "nav-link" })</li>
                 </ul>
             </div>

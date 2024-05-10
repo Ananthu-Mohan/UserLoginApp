@@ -41,15 +41,15 @@ namespace UserLoginApplication.Controllers
                 if (responseMsg.Status)
                 {
                     Session["Username"] = userLoginData.UserName;
-                    TempData["AuthKey"] = responseMsg.apiKey;
-                    TempData["KeyExpiration"] = responseMsg.apiKeyExpiration.ToString();
+                    Session["AuthKey"] = responseMsg.apiKey;
+                    Session["KeyExpiration"] = responseMsg.apiKeyExpiration.ToString();
                     if (string.Equals(userLoginData.UserName,"admin"))
                     {
                         return RedirectToAction("Index", "Home");
                     }
                     else
                     {
-                        return RedirectToAction("Index", "Home");
+                        return RedirectToAction("ReadUser", "Home");
                     }
                 }
                 else
