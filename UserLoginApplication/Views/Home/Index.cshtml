@@ -24,7 +24,14 @@
     </style>
     <main>
         <section class="row" aria-labelledby="aspnetTitle">
-            <h1 id="title">Welcome @Session["Username"].ToString().ToUpper()</h1>
+            @if (Session["saml_sso_usernameusername"] != null)
+            {
+                <h1 id="title">Welcome @Session["saml_sso_usernameusername"].ToString()</h1>
+            }
+            else
+            {
+                <h1 id="title">Welcome @Session["Username"].ToString().ToUpper()</h1>
+            }
         </section>
         <hr />
         <section class="row" aria-labelledby="aspnetBody">
