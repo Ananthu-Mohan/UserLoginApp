@@ -3470,3 +3470,51 @@ Log Entry : 02:58:16 AM Tuesday, 14 May, 2024
 Log Entry : 02:58:16 AM Tuesday, 14 May, 2024
   :Redirecting to: https://localhost:44390/
 -------------------------------
+
+Log Entry : 03:02:17 AM Tuesday, 14 May, 2024
+  :Module invoked
+-------------------------------
+
+Log Entry : 03:02:17 AM Tuesday, 14 May, 2024
+  :Getting the ssoaction parameter name as >> login
+-------------------------------
+
+Log Entry : 03:02:17 AM Tuesday, 14 May, 2024
+  :Initiating SSO with app: UserLoginApplication
+-------------------------------
+
+Log Entry : 03:02:17 AM Tuesday, 14 May, 2024
+  :Relay State: https://localhost:44390/
+-------------------------------
+
+Log Entry : 03:02:17 AM Tuesday, 14 May, 2024
+  :Creating http-redirect request
+-------------------------------
+
+Log Entry : 03:02:17 AM Tuesday, 14 May, 2024
+  :SP Issuer: https://localhost:44390/
+-------------------------------
+
+Log Entry : 03:02:17 AM Tuesday, 14 May, 2024
+  :ACS Url: https://localhost:44390/?ssoaction=acs
+-------------------------------
+
+Log Entry : 03:02:17 AM Tuesday, 14 May, 2024
+  :SSO Url: https://sso.jumpcloud.com/saml2/userapplogin
+-------------------------------
+
+Log Entry : 03:02:17 AM Tuesday, 14 May, 2024
+  :Returning login request xml
+-------------------------------
+
+Log Entry : 03:02:17 AM Tuesday, 14 May, 2024
+  :SAML Request<samlp:AuthnRequest ID="_d8b8ebff-7b32-4ff0-b973-d22bf598bdef" Version="2.0" IssueInstant="2024-05-13T21:32:17Z" ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" AssertionConsumerServiceURL="https://localhost:44390/?ssoaction=acs" Destination="https://sso.jumpcloud.com/saml2/userapplogin" xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol"><saml:Issuer xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion">https://localhost:44390/</saml:Issuer><samlp:NameIDPolicy AllowCreate="true" Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified" /></samlp:AuthnRequest>
+-------------------------------
+
+Log Entry : 03:02:17 AM Tuesday, 14 May, 2024
+  :SSO Url: https://sso.jumpcloud.com/saml2/userapplogin
+-------------------------------
+
+Log Entry : 03:02:17 AM Tuesday, 14 May, 2024
+  :Redirecting to request: https://sso.jumpcloud.com/saml2/userapplogin?SAMLRequest=fVJbT8IwGP0rTd93hwANm0GIcQnqAtMHX0zXdVDTtbNf6%2BXfO4YafIDXk3P5zsk3B9rKjiyc3asNf3McLMpXKX6pp9WUV03jTaok9kZNE3rVbJJ4dRxXzXg2rWreYPTEDQitUhz7IUY5gOO5AkuV7aEwHnnh2IuSMo5IEpNo8oxRYbTVTMtroWqhdil2RhFNQQBRtOVALCPbxd2a9I6kOpKA3JZl4RUP2xKjBQA3tg9dagWu5WbLzbtg%2FHGzTvHe2g5IEEjNqNxrsGQ0SmZhcAWgKTuoUsoAo1XfUyg6AH%2BinuO%2FurZjUrvaZ7oNDuPEgesDaddJvRMKo89WKiDDbJeP736a4mx%2BYJNhHXOivyynvz1xdq7VPDgxPqZ05L53yleFloJ9oYWU%2BmNpOLU8xdY4jtGNNi2157MjPxoQUXvNQCVOQceZaASvMQqyY%2Br%2Fn8m%2BAQ%3D%3D&RelayState=https%3A%2F%2Flocalhost%3A44390%2F
+-------------------------------
