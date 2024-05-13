@@ -40,10 +40,10 @@ namespace UserLoginApplication.Controllers
                 ResponseMessage responseMsg = JsonConvert.DeserializeObject<ResponseMessage>(responseContent);
                 if (responseMsg.Status)
                 {
-                    Session["Username"] = userLoginData.UserName;
+                    Session["Username"] = responseMsg.userDets.UserName.ToString();
                     Session["AuthKey"] = responseMsg.apiKey;
                     Session["KeyExpiration"] = responseMsg.apiKeyExpiration.ToString();
-                    if (string.Equals(userLoginData.UserName,"admin"))
+                    if (string.Equals(responseMsg.userDets.UserName.ToString(), "admin"))
                     {
                         return RedirectToAction("Index", "Home");
                     }

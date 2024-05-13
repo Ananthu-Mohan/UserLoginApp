@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitProject\\UserLoginApp\\IdentityBackendAPI\\IdentityBackendAPI.csproj": {}
+    "C:\\Users\\Ananthu\\Desktop\\UserLoginApp\\IdentityBackendAPI\\IdentityBackendAPI.csproj": {}
   },
   "projects": {
-    "D:\\GitProject\\UserLoginApp\\IdentityBackendAPI\\IdentityBackendAPI.csproj": {
+    "C:\\Users\\Ananthu\\Desktop\\UserLoginApp\\IdentityBackendAPI\\IdentityBackendAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitProject\\UserLoginApp\\IdentityBackendAPI\\IdentityBackendAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Ananthu\\Desktop\\UserLoginApp\\IdentityBackendAPI\\IdentityBackendAPI.csproj",
         "projectName": "IdentityBackendAPI",
-        "projectPath": "D:\\GitProject\\UserLoginApp\\IdentityBackendAPI\\IdentityBackendAPI.csproj",
+        "projectPath": "C:\\Users\\Ananthu\\Desktop\\UserLoginApp\\IdentityBackendAPI\\IdentityBackendAPI.csproj",
         "packagesPath": "C:\\Users\\Ananthu\\.nuget\\packages\\",
-        "outputPath": "D:\\GitProject\\UserLoginApp\\IdentityBackendAPI\\obj\\",
+        "outputPath": "C:\\Users\\Ananthu\\Desktop\\UserLoginApp\\IdentityBackendAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ananthu\\AppData\\Roaming\\NuGet\\NuGet.Config",

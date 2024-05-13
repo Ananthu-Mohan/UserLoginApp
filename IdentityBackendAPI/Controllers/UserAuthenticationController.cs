@@ -40,11 +40,13 @@ namespace IdentityBackendAPI.Controllers
             }
             else
             {
-                if (userDetails.Where(user => user.UserName == userDetailsContent.UserName && user.Password == userDetailsContent.Password && String.Equals(user.EmployeeState,"Active")).Count() > 0)
+                IdentityModel userFound = userDetails.Where(user => user.Email == userDetailsContent.Email && user.Password == userDetailsContent.Password && String.Equals(user.EmployeeState, "Active")).FirstOrDefault();
+                if (userFound != null)
                 {
                     resAuth.Status = true;
                     resAuth.Message = $"User - {userDetailsContent.UserName} authenticated";
                     (resAuth.apiKeyExpiration, resAuth.apiKey) = tokenUtility.GetToken(userDetailsContent);
+                    resAuth.userDets = userFound;
                 }
                 else
                 {

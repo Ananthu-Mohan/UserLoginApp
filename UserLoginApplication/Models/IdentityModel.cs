@@ -9,11 +9,11 @@ namespace UserLoginApplication.Models
 {
     public class IdentityModel
     {
-        [DisplayName("Username")]
-        [Required]
-        public string UserName { get; set; }
+        public string UserName { get; set; } = string.Empty;
         [DisplayName("Password")]
         public string Password { get; set; }
+        [DisplayName("Email")]
+        [Required]
         public string Email { get; set; } = string.Empty;
         public long? PhoneNumber { get; set; }
         public int? EmployeeID { get; set; }

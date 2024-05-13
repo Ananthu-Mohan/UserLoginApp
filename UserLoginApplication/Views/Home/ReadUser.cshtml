@@ -29,13 +29,15 @@
         <h1 id="title">Welcome @Session["Username"].ToString().ToUpper()</h1>
     </section>
     <hr />
-
+    <h6 style="margin-left:20px">
+        Authroized API : /api/GetAllUserDetails
+    </h6>
     <div class="row">
         <h5>User Token:</h5>
-            <textarea class="col-md-6 form-control" rows="5" disabled>
-                @Session["AuthKey"]
-            </textarea>
-        <p><em>Token expires on : @Session["KeyExpiration"] UTC</em></p>
+        <textarea class="col-md-6 form-control" rows="5" disabled>
+         @Session["AuthKey"]
+     </textarea>
+        <h6 style="margin-left:15px" class="tokenExpiration"><em>Token expires on : @Session["KeyExpiration"] UTC</em></h6>
     </div>
 </main>
 
