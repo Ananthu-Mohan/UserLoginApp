@@ -114,7 +114,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-6">
-                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control inputFields",@type="email" } })
+                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control inputFields", @type = "email" } })
                 @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -134,6 +134,28 @@
                 </div>
             </div>
         </div>
+        @{
+                <div class="jumbotron">
+                    @{
+                        string username = null;
+                        if (Session["saml_sso_usernameusername"] != null)
+                        {
+                            username = Session["saml_sso_usernameusername"].ToString();
+                        }
+                        if (String.IsNullOrEmpty(username))
+                        {
+                            @*<li>@Html.ActionLink("Login with JumpCloud", "", "", new { area = "" }, new { @class = "nav-link", @href = "https://localhost:44390/?ssoaction=login&appid=UserLoginApplication" })</li>*@
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-8">
+                                        @Html.ActionLink("Login with JumpCloud", "", "", new { area = "" }, new { @class = "btn btn-danger", @href = "https://localhost:44390/?ssoaction=login&appid=UserLoginApplication", @style = "width:49%;margin-left:5px;margin-top:10px;" })
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+         }
         @{
             if (!String.IsNullOrEmpty(ViewBag.Message))
             {

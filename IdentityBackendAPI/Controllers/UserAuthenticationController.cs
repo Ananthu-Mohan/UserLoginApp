@@ -57,6 +57,24 @@ namespace IdentityBackendAPI.Controllers
             return resAuth;
         }
 
+
+        [AllowAnonymous]
+        [HttpPost]
+        [Route("api/TokenKeyForCloudUsers")]
+        public async Task<ResponseMessage> TokenKeyForCloudUsers([FromBody] string username)
+        {
+            ResponseMessage resAuth = new ResponseMessage();
+            TokenUtility tokenUtility = new TokenUtility(_configuration);
+
+            if(!String.IsNullOrEmpty(username))
+            {
+                resAuth.Status = true;
+                resAuth.Message = $"User - {username} authenticated";
+                (resAuth.apiKeyExpiration, resAuth.apiKey) = tokenUtility.GetTokenForJumpCloudUsers(username);
+            }
+            return resAuth;
+        }
+
         [Authorize]
         [HttpGet]
         [Route("api/GetAllUserDetails")]

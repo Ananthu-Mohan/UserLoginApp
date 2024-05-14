@@ -42,6 +42,13 @@ namespace UserLoginApplication.Utility
             var response = res.Content.ReadAsStringAsync().Result;
             return response;
         }
+        public async Task<string> TokenForJumpCloudUsers(string username)
+        {
+            string serializedContent = JsonConvert.SerializeObject(username);
+            HttpResponseMessage res = await client.PostAsync(url, new StringContent(serializedContent, Encoding.UTF8, "application/json"));
+            var response = res.Content.ReadAsStringAsync().Result;
+            return response;
+        }
 
         public async Task<List<IdentityModel>> UserDetails()
         {

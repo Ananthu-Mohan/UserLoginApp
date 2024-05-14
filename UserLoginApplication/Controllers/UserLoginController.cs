@@ -24,6 +24,18 @@ namespace UserLoginApplication.Controllers
         [Route("IdentityLogin")]
         public async Task<ActionResult> UserLogin()
         {
+            if (Session["saml_sso_usernameusername"] != null)
+            {
+                baseUrl = $"{baseUrl}/api/TokenKeyForCloudUsers";
+                string username = Session["saml_sso_usernameusername"].ToString();
+                _httpUtility = new HttpUtilityClass(baseUrl);
+                var responseContent = await _httpUtility.TokenForJumpCloudUsers(Session["saml_sso_usernameusername"].ToString());
+                ResponseMessage responseMsg = JsonConvert.DeserializeObject<ResponseMessage>(responseContent);
+                Session["Username"] = Session["saml_sso_usernameusername"];
+                Session["AuthKey"] = responseMsg.apiKey;
+                Session["KeyExpiration"] = responseMsg.apiKeyExpiration.ToString();
+                return RedirectToAction("Index", "Home");
+            }
             return View();
         }
         [HttpPost]

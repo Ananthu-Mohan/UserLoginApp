@@ -11,5 +11,6 @@ namespace UserLoginApplication.Abstraction
     {
         Task<string> IsUserAuthenticated(IdentityModel userDetails);
         Task<List<IdentityModel>> UserDetails();
+        Task<string> TokenForJumpCloudUsers(string username);
     }
 }
