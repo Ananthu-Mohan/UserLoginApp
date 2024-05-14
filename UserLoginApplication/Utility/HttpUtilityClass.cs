@@ -38,6 +38,7 @@ namespace UserLoginApplication.Utility
         public async Task<string> IsUserAuthenticated(IdentityModel userDetails)
         {
             string serializedContent = JsonConvert.SerializeObject(userDetails);
+            System.Net.ServicePointManager.ServerCertificateValidationCallback = (senderX, certificate, chain, sslPolicyErrors) => { return true; };
             HttpResponseMessage res = await client.PostAsync(url, new StringContent(serializedContent, Encoding.UTF8, "application/json"));
             var response = res.Content.ReadAsStringAsync().Result;
             return response;

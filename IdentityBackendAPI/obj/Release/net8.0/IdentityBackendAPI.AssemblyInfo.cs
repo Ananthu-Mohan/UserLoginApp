@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IdentityBackendAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4c6824daa17ab9f27a32f7cbbc9d558797e399be")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f87b58f712fec6450a5cd2395bc605ee4c4f624e")]
 [assembly: System.Reflection.AssemblyProductAttribute("IdentityBackendAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IdentityBackendAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

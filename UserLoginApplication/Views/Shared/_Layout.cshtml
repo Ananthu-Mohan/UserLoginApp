@@ -23,7 +23,7 @@
                             <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
                             if (Session["saml_sso_usernameusername"] != null)
                             {
-                                <li>@Html.ActionLink("Logout from JumpCloud", "", "", new { area = "" }, new { @class = "nav-link", @href = "https://localhost:44390/?ssoaction=logout&appid=UserLoginApplication" })</li>
+                                <li>@Html.ActionLink("Logout from JumpCloud", "", "", new { area = "" }, new { @class = "nav-link", @href = "https://userlogin.com/?ssoaction=logout&appid=UserLoginApplication" })</li>
                             }
                         }
                         else
