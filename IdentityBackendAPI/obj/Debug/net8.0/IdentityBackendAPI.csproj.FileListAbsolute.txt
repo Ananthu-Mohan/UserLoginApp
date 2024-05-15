@@ -122,3 +122,45 @@ D:\GitProject\UserLoginApp\IdentityBackendAPI\obj\Debug\net8.0\IdentityBackendAP
 D:\GitProject\UserLoginApp\IdentityBackendAPI\obj\Debug\net8.0\IdentityBackendAPI.genruntimeconfig.cache
 D:\GitProject\UserLoginApp\IdentityBackendAPI\obj\Debug\net8.0\ref\IdentityBackendAPI.dll
 C:\Users\Ananthu\Desktop\UserLoginApp\IdentityBackendAPI\bin\Debug\net8.0\Newtonsoft.Json.dll
+G:\C# Projects\UserLoginApp\IdentityBackendAPI\bin\Debug\net8.0\appsettings.Development.json
+G:\C# Projects\UserLoginApp\IdentityBackendAPI\bin\Debug\net8.0\appsettings.json
+G:\C# Projects\UserLoginApp\IdentityBackendAPI\bin\Debug\net8.0\IdentityBackendAPI.exe
+G:\C# Projects\UserLoginApp\IdentityBackendAPI\bin\Debug\net8.0\IdentityBackendAPI.deps.json
+G:\C# Projects\UserLoginApp\IdentityBackendAPI\bin\Debug\net8.0\IdentityBackendAPI.runtimeconfig.json
+G:\C# Projects\UserLoginApp\IdentityBackendAPI\bin\Debug\net8.0\IdentityBackendAPI.dll
+G:\C# Projects\UserLoginApp\IdentityBackendAPI\bin\Debug\net8.0\IdentityBackendAPI.pdb
+G:\C# Projects\UserLoginApp\IdentityBackendAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+G:\C# Projects\UserLoginApp\IdentityBackendAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+G:\C# Projects\UserLoginApp\IdentityBackendAPI\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+G:\C# Projects\UserLoginApp\IdentityBackendAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+G:\C# Projects\UserLoginApp\IdentityBackendAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+G:\C# Projects\UserLoginApp\IdentityBackendAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+G:\C# Projects\UserLoginApp\IdentityBackendAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+G:\C# Projects\UserLoginApp\IdentityBackendAPI\bin\Debug\net8.0\Microsoft.OpenApi.dll
+G:\C# Projects\UserLoginApp\IdentityBackendAPI\bin\Debug\net8.0\Newtonsoft.Json.dll
+G:\C# Projects\UserLoginApp\IdentityBackendAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+G:\C# Projects\UserLoginApp\IdentityBackendAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+G:\C# Projects\UserLoginApp\IdentityBackendAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+G:\C# Projects\UserLoginApp\IdentityBackendAPI\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+G:\C# Projects\UserLoginApp\IdentityBackendAPI\obj\Debug\net8.0\IdentityBackendAPI.csproj.AssemblyReference.cache
+G:\C# Projects\UserLoginApp\IdentityBackendAPI\obj\Debug\net8.0\IdentityBackendAPI.GeneratedMSBuildEditorConfig.editorconfig
+G:\C# Projects\UserLoginApp\IdentityBackendAPI\obj\Debug\net8.0\IdentityBackendAPI.AssemblyInfoInputs.cache
+G:\C# Projects\UserLoginApp\IdentityBackendAPI\obj\Debug\net8.0\IdentityBackendAPI.AssemblyInfo.cs
+G:\C# Projects\UserLoginApp\IdentityBackendAPI\obj\Debug\net8.0\IdentityBackendAPI.csproj.CoreCompileInputs.cache
+G:\C# Projects\UserLoginApp\IdentityBackendAPI\obj\Debug\net8.0\IdentityBackendAPI.MvcApplicationPartsAssemblyInfo.cs
+G:\C# Projects\UserLoginApp\IdentityBackendAPI\obj\Debug\net8.0\IdentityBackendAPI.MvcApplicationPartsAssemblyInfo.cache
+G:\C# Projects\UserLoginApp\IdentityBackendAPI\obj\Debug\net8.0\IdentityBackendAPI.sourcelink.json
+G:\C# Projects\UserLoginApp\IdentityBackendAPI\obj\Debug\net8.0\staticwebassets.build.json
+G:\C# Projects\UserLoginApp\IdentityBackendAPI\obj\Debug\net8.0\staticwebassets.development.json
+G:\C# Projects\UserLoginApp\IdentityBackendAPI\obj\Debug\net8.0\staticwebassets\msbuild.IdentityBackendAPI.Microsoft.AspNetCore.StaticWebAssets.props
+G:\C# Projects\UserLoginApp\IdentityBackendAPI\obj\Debug\net8.0\staticwebassets\msbuild.build.IdentityBackendAPI.props
+G:\C# Projects\UserLoginApp\IdentityBackendAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.IdentityBackendAPI.props
+G:\C# Projects\UserLoginApp\IdentityBackendAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.IdentityBackendAPI.props
+G:\C# Projects\UserLoginApp\IdentityBackendAPI\obj\Debug\net8.0\staticwebassets.pack.json
+G:\C# Projects\UserLoginApp\IdentityBackendAPI\obj\Debug\net8.0\scopedcss\bundle\IdentityBackendAPI.styles.css
+G:\C# Projects\UserLoginApp\IdentityBackendAPI\obj\Debug\net8.0\Identity.F1822723.Up2Date
+G:\C# Projects\UserLoginApp\IdentityBackendAPI\obj\Debug\net8.0\IdentityBackendAPI.dll
+G:\C# Projects\UserLoginApp\IdentityBackendAPI\obj\Debug\net8.0\refint\IdentityBackendAPI.dll
+G:\C# Projects\UserLoginApp\IdentityBackendAPI\obj\Debug\net8.0\IdentityBackendAPI.pdb
+G:\C# Projects\UserLoginApp\IdentityBackendAPI\obj\Debug\net8.0\IdentityBackendAPI.genruntimeconfig.cache
+G:\C# Projects\UserLoginApp\IdentityBackendAPI\obj\Debug\net8.0\ref\IdentityBackendAPI.dll

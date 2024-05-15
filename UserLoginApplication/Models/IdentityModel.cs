@@ -11,6 +11,7 @@ namespace UserLoginApplication.Models
     {
         public string UserName { get; set; } = string.Empty;
         [DisplayName("Password")]
+        [Required]
         public string Password { get; set; }
         [DisplayName("Email")]
         [Required]
